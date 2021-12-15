@@ -7,3 +7,26 @@ source-repository-package
   type: git
   location: https://github.com/hasura/ekg-json.git
   tag: 84990712c165d7e3e76b2b289640ef8b5033f12f
+
+-- Temporary GHC 9.2 migration stuff (to be removed before merging to master)
+
+-- This is a 9.2-compatible version of "memory", created from a head.hackage
+-- patch by tfausak.
+source-repository-package
+  type: git
+  location: https://github.com/tfausak/hs-memory
+  tag: 3cf661a8a9a8ac028df77daa88e8d65c55a3347a
+
+-- This is a 9.2-compatible version of "basement", created from a head.hackage
+-- patch by TomMD.
+source-repository-package
+  type: git
+  location: https://github.com/TomMD/foundation
+  tag: 0bb195e1fea06d144dafc5af9a0ff79af0a5f4a0
+  subdir: basement
+
+-- This is a WIP, 9.2-compatible version of "cryptonite" by josephcsible
+source-repository-package
+  type: git
+  location: https://github.com/josephcsible/cryptonite
+  tag: 3b081e3ad027b0550fc87f171dffecbb20dedafe
